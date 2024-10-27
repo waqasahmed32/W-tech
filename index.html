@@ -1,0 +1,528 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Home - Page</title>
+   
+    <style>
+        body
+        {
+            margin: 0px;
+            padding: 0px;
+            background:url(images/hills.avif);
+            background-size: cover;
+            background-attachment: fixed; 
+            background-position: center; 
+            background-repeat: no-repeat;
+            
+        }
+        .header .nav
+        {
+            height: 30px;
+            width: auto;
+            background-color: #000000;
+            border: 1px solid;
+            padding: 10px;
+            box-shadow: 10px 10px 5px #84926f ;
+            width: 100%;
+            position: fixed;
+            top: 0;
+            
+        }
+        
+        .nav a
+        {
+            color: #fff;
+            text-decoration: none;
+            text-align: right;
+            font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin-left: 20px;
+            padding-top: 100px;   
+        }
+        .nav a:hover
+        {
+            color: #96c5a0;
+            
+        }
+        .btn1
+        {
+            height: 40px;
+            width: 80px;
+            border-radius: 5px;
+            border: #a4a02e;
+            margin-left: 300px;
+            margin-top: -5px;
+            cursor: pointer;
+            background-color: #a4a02e;
+        }
+        .btn1:hover
+        {
+            width: 100px;
+            padding-left: 10px;
+        }
+        .content .img
+        {
+            
+            background:fixed;
+            width: 100%;
+            height: 480px;
+            
+        }
+        .content h1
+        {
+            font-family: Arial, Helvetica, sans-serif;
+            position: absolute;
+            top: 140px;
+            padding-left: 35%;
+            color: #f4d03f ;
+            
+        }
+        .btn2
+        {
+            height: 40px;
+            width: 120px;
+            border-radius: 5px;
+            border: #d5dbdb solid;
+            position: absolute;
+            top: 250px;
+            left: 45%;
+            cursor: pointer;
+            background-color: #d5dbdb ;
+            color: #7b241c ;
+            font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+        .btn2:hover
+        {
+            background-color: #707b7c;
+            color: #fff;
+            border: #fff solid;
+        }
+        .row
+        {
+            margin-top: 50px;
+        }
+        .col
+        {
+            display: inline-block;
+        }
+        h1
+        {
+            padding-left: 43%;
+            color: #ec7063;
+            font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        }
+        .icon
+        {
+            font-size: larger;
+        }
+      
+        .middle .section1
+        {
+            height: auto;
+            width:30%;
+            display: inline-block;
+            margin-left: 20px;
+            border: solid #909597;
+            cursor: pointer;
+            box-shadow: 10px 10px #84926f;
+            background-color: #909597;
+        }
+        .middle .section1:hover
+        {
+            background-color: #567a84;
+            border: solid #567a84 ;
+        
+            
+        }
+        .middle .section2
+        {
+            height: auto;
+            width:30%;
+            display: inline-block;
+            border: solid #909597;
+            box-shadow: 10px 10px #84926f ;
+            cursor: pointer;
+            margin-left: 20px;
+            background-color: #909597;
+        }
+        .middle .section2:hover
+        {
+            background-color: #567a84;
+            border: solid #567a84 ;
+        }
+        .middle .section3
+        {
+            height: auto;
+            width:30%;
+            display: inline-block;
+            border: solid #909597;
+            box-shadow: 10px 10px #84926f ;
+            cursor: pointer;
+            margin-left: 20px;
+            background-color: #909597;
+        }
+        .middle .section3:hover
+        {
+            background-color: #567a84;
+            border: solid #567a84 ;
+        }
+        .middle h2
+        {
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            color: #a4a02e;
+            text-align: center;
+            letter-spacing: 3px;
+        }
+        .middle .section1 h5
+        {
+            color:#154360;
+            text-align: center;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        
+        .middle .section2 h5
+        {
+            color:#154360;
+            text-align: center;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .middle .section3 h5
+        {
+            color:#154360;
+            text-align: center;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .middle .section1 ul li
+        {
+            font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        
+        }
+        .middle .section2 ul li
+        {
+            font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        
+        }
+        .middle .section3 ul li
+        {
+            font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        
+        }
+        .btn3
+        {
+            height: 40px;
+            width: 150px;
+            border-radius: 5px;
+            border: #d5dbdb solid;
+            margin-left: 30%;
+            margin-top: 15px;
+            cursor: pointer;
+            background-color: #d5dbdb ;
+            color: #7b241c ;
+            font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        }
+        .btn3:hover
+        {
+            background-color: #707b7c;
+            color: #fff;
+            border: #fff solid;
+        }
+        .gallery h2
+        {
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            color:#000000;
+            text-align: center;
+            padding-top: 30px;
+            letter-spacing: 3px;
+        }
+        .gallary img
+        {
+            height: auto;
+            width:30%;
+            margin-left: 20px;
+            cursor: pointer;
+            box-shadow: 10px 10px 10px #84926f ; 
+        }
+        
+        .gallery {
+            text-align: center;
+            margin: 20px;
+        }
+        
+        .gallery h2 {
+            font-size: 24px;
+            margin-bottom: 15px;
+        }
+        
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 10px;
+            justify-items: center;
+        }
+        
+        .grid-item {
+            margin-top: 50px;
+            max-height: 400px;
+            max-width: 300px;
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif
+            
+        }
+        .gallery
+        {
+           background-color:#909597;
+           margin-top: 50px;
+        }
+       
+        
+        .grid-item img {
+            width: 100%;
+            height: auto;
+            box-shadow: 10px 10px;
+        }
+        .footer
+        {
+            height:auto;
+            width: 100%;
+            background-color:#000000 ;
+            display: flex;
+        }
+
+        .footer .sec1 i
+        {
+            margin-left: 20px;
+            color: #fff;
+            cursor: pointer;
+            max-width: 30%;
+            
+        }
+        .footer .sec1 i:hover
+        {
+            color: #a4a02e;
+        }
+        .footer .sec1 h4
+        {
+            padding-top: 20px;
+            padding-left: 20px;
+            color:#a4a02e;
+            font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        }
+        .footer .sec2 a
+        {
+            text-decoration: none;
+            color: #fff;
+            max-width: 30%;
+            padding-left: 70px;
+            font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        }
+        .footer .sec2 a:hover
+        {
+            color:#a4a02e;
+        }
+        .footer .sec2 h4
+        {
+            padding-top: 20px;
+            padding-left: 50px;
+            color: #a4a02e;
+            font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        }
+        .footer .sec1 h3
+        {
+            color: #a4a02e;
+            padding-left: 20px;
+            padding-top: -20px;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        }
+        .footer .sec1 p
+        {
+            color: #fff;
+            padding-left: 20px;
+            font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        }
+        .footer .sec3 a
+        {
+            text-decoration: none;
+            color: #fff;
+            max-width: 30%;
+            padding-left: 70px;
+            font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        }
+        .footer .sec3 a:hover
+        {
+            color:#a4a02e;
+        }
+        .footer .sec3 h4
+        {
+            padding-top: 20px;
+            padding-left: 50px;
+            color: #a4a02e;
+            font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        }
+        .footer .sec4 a
+        {
+            text-decoration: none;
+            color: #fff;
+            max-width: 30%;
+            padding-left: 70px;
+            font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        }
+        .footer .sec4 a:hover
+        {
+            color:#a4a02e;
+        }
+        .footer .sec4 h4
+        {
+            padding-top: 20px;
+            padding-left: 50px;
+            color: #a4a02e;
+            font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        }
+        .footer_img img
+        {
+            margin-left: 50px;
+            margin-top: 50px;
+            height: 150px;
+            width: 150px;
+            border-radius: 100px;
+            border: solid #a4a02e;
+            animation: rotate 4s infinite;
+        }
+        @keyframes rotate {
+            from {
+                transform: rotate(0deg);
+            }
+            to {
+                transform: rotate(360deg);
+            }
+        }
+        .footer_img h3
+        {
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            padding-left: 30px;
+            color: #a4a02e;
+        }
+        .footer .sec3 h5
+        {
+            color: #a4a02e;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            font-size: large;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="nav">
+               <a href="index.html" class="icon"><i class="fa-solid fa-book-open"></i> W-Tech</a>
+               <a href="index.html" style="padding-left: 200px;"><i class="fa-solid fa-house"></i> Home</a>
+               <a href="about_us.html"><i class="fa-solid fa-circle-info"></i> About Us</a>
+               <a href="#"><i class="fa-brands fa-servicestack"></i> Our Services</a>
+               <a href="course.html"><i class="fa-solid fa-book-open"></i> Our Courses</a>
+               <a href="contact.html"><i class="fa-solid fa-address-book"></i> Contact Us</a>
+               <button type="button" class="btn1"><strong>Explore</strong> <i class="fa-solid fa-arrow-right-to-bracket"></i></button>
+            </div>
+        </div>
+        <div class="content">
+           <h1 class="heading"><Marquee>Welcome to the Site</Marquee></h1>
+           <button type="button" class="btn2"><strong>Learn More <i class="fa-solid fa-plus"></i></strong></button>
+           <img class="img" src="images/OUTFIT.avif" alt="">
+        </div>
+        
+        <div class="middle">
+            <h2>Posts</h2>
+            <div class="section1">
+                <h5>We are hiring tutor for web designing course</h5>
+                <h5>Requirements:</h5>
+                <ul>
+                    <li>14 or 6 years of Graduation</li>
+                    <li>Minimum 1 year of experience</li>
+                    <li>Strong Skills / Grip on web</li>
+                </ul>
+                <a href="Upload.html"><button type="button" class="btn3"><strong>Send Your Resume <i class="fa-solid fa-plus"></i></strong></button></a>
+                <br><br>
+            </div>
+            <div class="section2">
+                <h5>We are hiring tutor for backend development</h5>
+                <h5>Requirements:</h5>
+                <ul>
+                    <li>14 or 6 years of Graduation</li>
+                    <li>Minimum 1 year of experience</li>
+                    <li>Strong Skills / Grip on web</li>
+                </ul>
+               <a href="Upload.html"> <button type="button" class="btn3"><strong>Send Your Resume <i class="fa-solid fa-plus"></i></strong></button></a>
+                <br><br>
+            </div>
+            <div class="section3">
+                <h5>We are hiring for our tech maintenance</h5>
+                <h5>Requirements:</h5>
+                <ul>
+                    <li>14 or 6 years of Graduation</li>
+                    <li>Minimum 1 year of experience</li>
+                    <li>Strong Skills / Grip on web</li>
+                </ul>
+               <a href="Upload.html"> <button type="button" class="btn3"><strong>Send Your Resume <i class="fa-solid fa-plus"></i></strong></button></a>
+                <br><br>
+            </div>
+        </div>
+        
+        <div class="gallery">
+            <h2>Our Developer's Team</h2>
+            
+            <div class="grid-container">
+                <div class="grid-item"><img src="images/drwaqas.jpg" alt=""><br><br>WAQAS AHMED</div>
+                <div class="grid-item"><img src="images/aftab.jpg" alt=""><br><br>UMER AFTAB</div>
+                <div class="grid-item"><img src="images/abdul.jpg" alt=""><br><br>ABDUL REHMAN</div>
+                <div class="grid-item"><img src="images/sindhi.jpg" alt=""><br><br>MUHAMMAD UMER</div>
+                <div class="grid-item"><img src="images/zaki.jpg" alt=""><br><br>ZAKA ULLAH</div>
+                <div class="grid-item"><img src="images/haseeb.jpg" alt=""><br><br>HASEEB SULMAN</div>
+                <br><br>
+            </div>
+        </div>
+        <div class="footer">
+            <div class="sec1">
+                 <h4>Get in touch with us on social:</h4>
+                 <a href="https://wa.me/+923476421106"><i class="fa-brands fa-whatsapp"></i></a> 
+                 <a href="https://www.instagram.com/rai_waqas123"> <i class="fa-brands fa-instagram"></i></a> 
+                 <a href="mailto:waqasah652@gmail.com"><i class="fa-regular fa-envelope"></i></a>
+                 <a href="https://www.facebook.com/"><i class="fa-brands fa-x-twitter"></i></a>
+                 <a href="https://www.facebook.com/rai.waqaskharal.52"><i class="fa-brands fa-facebook-f"></i></a>
+                 <a href="https://www.tiktok.com/@raiwaqaskharal7"><i class="fa-brands fa-tiktok"></i></a>
+                 
+                 <h3>Location:</h3>
+                 <p>Near 84 Chak, Lahore road Sargodha</p>
+            </div>
+            <div class="sec2">
+                <h4>OUR SERVICES & STORIES</h4>
+                <a href="#"><i class="fa-solid fa-caret-right"></i> Our success Stories</a><br>
+                <a href="#"><i class="fa-solid fa-caret-right"></i> Our Course Discounts</a><br>
+                <a href="#"><i class="fa-solid fa-caret-right"></i> Our Company rankes</a><br>
+                <a href="#"><i class="fa-solid fa-caret-right"></i> Our Company's Branches</a><br>
+                <a href="#"><i class="fa-solid fa-caret-right"></i> Our Company's team</a>
+           </div>
+           <div class="sec3">
+            <h4>OUR SERVICES & STORIES</h4>
+                <a href="#"><i class="fa-solid fa-caret-right"></i> Our success Stories</a><br>
+                <a href="#"><i class="fa-solid fa-caret-right"></i> Our Course Discounts</a><br>
+                <a href="#"><i class="fa-solid fa-caret-right"></i> Our Company rankes</a><br>
+                <a href="#"><i class="fa-solid fa-caret-right"></i> Our Company's Branches</a><br>
+                <a href="#"><i class="fa-solid fa-caret-right"></i> Our Company's team</a>
+                <h5>All right reserved Copyright <i class="fa-regular fa-copyright"></i></h5>
+       </div>
+       <div class="sec4">
+        <h4>OUR SERVICES & STORIES</h4>
+            <a href="#"><i class="fa-solid fa-caret-right"></i> Our success Stories</a><br>
+            <a href="#"><i class="fa-solid fa-caret-right"></i> Our Course Discounts</a><br>
+            <a href="#"><i class="fa-solid fa-caret-right"></i> Our Company rankes</a><br>
+            <a href="#"><i class="fa-solid fa-caret-right"></i> Our Company's Branches</a><br>
+            <a href="#"><i class="fa-solid fa-caret-right"></i> Our Company's team</a>
+   </div>
+   <div class="footer_img">
+    <img src="images/drwaqas.jpg" alt="">
+    <h3>CEO-Founder of W-Tech</h3>
+   </div>
+        </div>
+    </div>
+</body>
+</html>
