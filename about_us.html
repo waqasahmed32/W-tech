@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="icon" href="assets/logo.png">
+    
+    <title>About-Us</title>
+    <style>
+        body
+        {
+            margin: 0px;
+            padding: 0px;
+            
+        }
+        .header .nav
+        {
+            height: 30px;
+            width: auto;
+            background-color: #000000;
+            border: 1px solid;
+            padding: 10px;
+            box-shadow: 10px 10px #84926f ;
+            width: 100%;
+            position: fixed;
+            top: 0;
+            
+        }
+        
+        .nav a
+        {
+            color: #fff;
+            text-decoration: none;
+            text-align: right;
+            font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin-left: 20px;
+            padding-top: 100px;   
+        }
+        .nav a:hover
+        {
+            color: #96c5a0;
+            
+        }
+        .btn1
+        {
+            height: 40px;
+            width: 80px;
+            border-radius: 5px;
+            border: #a4a02e;
+            margin-left: 300px;
+            margin-top: -5px;
+            cursor: pointer;
+            background-color: #a4a02e;
+        }
+        .btn1:hover
+        {
+            width: 100px;
+            padding-left: 10px;
+        }
+        .content .img
+        {
+            
+            background:fixed;
+            width: 100%;
+            height: 480px;
+        }
+        .content h1
+        {
+            font-family: Arial, Helvetica, sans-serif;
+            position: absolute;
+            top: 140px;
+            padding-left: 35%;
+            color: #f4d03f ;
+        }
+        .btn2
+        {
+            height: 40px;
+            width: 120px;
+            border-radius: 5px;
+            border: #a4a02e solid;
+            position: absolute;
+            top: 250px;
+            left: 45%;
+            cursor: pointer;
+            background-color: #d5dbdb ;
+            color: #7b241c ;
+            font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+        .btn2:hover
+        {
+            background-color: #707b7c;
+            color: #fff;
+            border: #fff solid;
+        }
+        .row
+        {
+            margin-top: 50px;
+        }
+        .col
+        {
+            display: inline-block;
+        }
+        h1
+        {
+            padding-left: 43%;
+            color: #ec7063;
+            font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        }
+        .icon
+        {
+            font-size: larger;
+        }
+        .container {
+            padding: 20px;
+            
+        }
+        .intro {
+            text-align: center;
+            padding: 20px 0;
+        }
+        .products {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+        .product {
+            border: 1px solid #ddd;
+            margin: 10px;
+            padding: 20px;
+            width: 30%;
+            box-sizing: border-box;
+            text-align: center;
+        }
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+            /* position: fixed; */
+            width: 100%;
+            bottom: 0;
+        }
+
+        /* Responsive styles */
+        @media (max-width: 768px) {
+            nav {
+                flex-direction: column;
+                align-items: center;
+            }
+            nav a {
+                display: block;
+                width: 100%;
+                text-align: center;
+            }
+        }
+
+        @media (max-width: 480px) {
+            nav {
+                flex-direction: column;
+                align-items: center;
+            }
+            nav a {
+                display: block;
+                width: 100%;
+                text-align: center;
+            }
+        }
+        .header-info h2 {
+            text-align: center;
+            padding: 20px 0;
+            background-color: #a4a02e;
+        }
+     .intro1 h2
+     {
+        padding-left: 20px;
+        color: #a4a02e;
+        
+     }
+
+     .intro1 p
+     {
+      padding-left: 20px;
+      text-align: justify;
+      font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+     }
+     .mission h2
+     {
+        padding-left: 20px;
+        color: #a4a02e;
+     }
+     .mission p
+     {
+        padding-left: 20px;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+
+     }
+     .history h2
+     {
+        padding-left: 20px;
+        color: #a4a02e;
+     }
+     .history p
+     {
+        padding-left: 20px;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+     }
+     .history i
+     {
+        padding-left: 20px;
+     }
+     .end
+     {
+        height: 50px;
+     }
+     .footer
+        {
+            height:auto;
+            width: 100%;
+            background-color:#000000 ;
+            display: flex;
+        }
+
+        .footer .sec1 i
+        {
+            margin-left: 20px;
+            color: #fff;
+            cursor: pointer;
+            max-width: 30%;
+            
+        }
+        .footer .sec1 i:hover
+        {
+            color: #a4a02e;
+        }
+        .footer .sec1 h4
+        {
+            padding-top: 20px;
+            padding-left: 20px;
+            color:#a4a02e;
+            font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        }
+        .footer .sec2 a
+        {
+            text-decoration: none;
+            color: #fff;
+            max-width: 30%;
+            padding-left: 70px;
+            font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        }
+        .footer .sec2 a:hover
+        {
+            color:#a4a02e;
+        }
+        .footer .sec2 h4
+        {
+            padding-top: 20px;
+            padding-left: 50px;
+            color: #a4a02e;
+            font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        }
+        .footer .sec1 h3
+        {
+            color: #a4a02e;
+            padding-left: 20px;
+            padding-top: -20px;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        }
+        .footer .sec1 p
+        {
+            color: #fff;
+            padding-left: 20px;
+            font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        }
+        
+    </style>
+</head>
+<body>
+    
+        <div class="header">
+            <div class="nav">
+               <a href="index.html" class="icon"><i class="fa-solid fa-book-open"></i> W-Tech</a>
+               <a href="index.html" style="padding-left: 200px;"><i class="fa-solid fa-house"></i> Home</a>
+               <a href="about_us.html"><i class="fa-solid fa-circle-info"></i> About Us</a>
+               <a href="#"><i class="fa-brands fa-servicestack"></i> Our Services</a>
+               <a href="course.html"><i class="fa-solid fa-book-open"></i> Our Courses</a>
+               <a href="contact.html" target="_blank"><i class="fa-solid fa-address-book"></i> Contact Us</a>
+               <button type="button" class="btn1"><strong>Explore</strong> <i class="fa-solid fa-arrow-right-to-bracket"></i></button>
+            </div>
+        </div>
+<div class="header-info">
+    <h2>About Us</h2>
+</div>
+<div class="intro1">
+    <h2>Introduction</h2>
+    <p><strong>Welcome to Al Jannat Machinery Sales Company</strong><br>
+       At Al Jannat Machinery Sales Company, we pride ourselves on being a leading provider of high-quality machinery solutions. Established with the vision<br> of revolutionizing the machinery sales industry, we have been committed to delivering top-notch products and exceptional services to our valued clients.</p>
+       <br>
+       <p>Our extensive range of machinery caters to various sectors including construction, manufacturing, and agriculture. We believe in empowering businesses<br> with reliable and efficient equipment that enhances productivity and drives growth.</p>
+       <br>
+       <p>Explore our product range and discover how we can contribute to your success. Welcome to Al Jannat Machinery Sales Company – your trusted partner<br> in quality machinery.</p>
+</div>
+<div class="mission">
+    <h2>Our Mission</h2>
+    <p>At Al Jannat Machinery Sales Company, our mission is to be the premier provider of superior machinery solutions, empowering our clients across diverse<br> industries to achieve optimal efficiency and productivity. We are committed to:</p>
+    <ul>
+        <li><strong>Quality Assurance:</strong> Delivering top-quality machinery that meets the highest standards of performance and durability.</li>
+        <li><strong>Customer Satisfaction:</strong> Providing exceptional service and support to ensure our clients' needs are met with utmost professionalism and care.</li>
+        <li><strong>Innovation and Growth:</strong> Continuously innovating our product offerings and services to keep pace with industry advancements and foster sustainable<br> growth for our clients.</li>
+        <li><strong>Integrity and Trust:</strong> Building long-lasting relationships based on trust, integrity, and mutual respect with our clients, partners, and employees.</li>
+        <li><strong>Community Engagement:</strong> Contributing positively to the communities we serve through responsible business practices and active engagement.</li>
+    </ul>
+    <p><strong>We strive to be the trusted partner for all your machinery needs, dedicated to helping you succeed and thrive in a competitive market.</strong></p>
+</div>
+<div class="history">
+    <h2>History</h2>
+    <p>Founded in 2021, Al Jannat Machinery Sales Company began as a small, family-owned business with a vision to provide high-quality machinery solutions<br> to local businesses. Our journey started with a modest inventory of machinery, focusing on construction and agricultural equipment. Over the years, our<br> commitment to excellence and customer satisfaction has fueled our growth, allowing us to expand our product range and reach.</p>
+    <p>By 2023, we had established a robust network of suppliers and partners, enabling us to offer a diverse array of machinery solutions tailored to the<br> specific needs of various industries. Our reputation for reliability and superior service helped us build a loyal customer base, and we soon became a trusted<br> name in the machinery sales industry.</p>
+    <p>In 2024, we relocated to a larger facility to accommodate our expanding operations and enhance our service capabilities. This move marked a significant<br> milestone, allowing us to improve our inventory management, streamline our operations, and better serve our growing clientele.</p>
+    <strong><i>At Al Jannat Machinery Sales Company, our history is defined by our unwavering commitment to quality, innovation, and customer satisfaction.<br> &nbsp;&nbsp;&nbsp; Our achievements reflect our dedication to being a trusted partner for all your machinery needs.</i></strong>
+</div>
+<div class="end"></div>
+<div class="footer">
+    <div class="sec1">
+         <h4>Get in touch with us on social:</h4>
+         <a href="https://wa.me/+923476421106"><i class="fa-brands fa-whatsapp"></i></a> 
+         <a href="https://www.instagram.com/rai_waqas123"> <i class="fa-brands fa-instagram"></i></a> 
+         <a href="mailto:waqasah652@gmail.com"><i class="fa-regular fa-envelope"></i></a>
+         <a href="https://www.facebook.com/"><i class="fa-brands fa-x-twitter"></i></a>
+         <a href="https://www.facebook.com/rai.waqaskharal.52"><i class="fa-brands fa-facebook-f"></i></a>
+         <a href="https://www.tiktok.com/@raiwaqaskharal7"><i class="fa-brands fa-tiktok"></i></a>
+         
+         <h3>Location:</h3>
+         <p>Near 84 Chak, Lahore road Sargodha</p>
+    </div>
+    <div class="sec2">
+        <h4>OUR SERVICES & STORIES</h4>
+        <a href="#"><i class="fa-solid fa-caret-right"></i> Our success Stories</a><br>
+        <a href="#"><i class="fa-solid fa-caret-right"></i> Our Course Discounts</a><br>
+        <a href="#"><i class="fa-solid fa-caret-right"></i> Our Company rankes</a><br>
+        <a href="#"><i class="fa-solid fa-caret-right"></i> Our Company's Branches</a><br>
+        <a href="#"><i class="fa-solid fa-caret-right"></i> Our Company's team</a>
+   </div>
+   <div class="sec3">
+    cont3
+</div>
+</div>
+    
+</body>
+</html>
